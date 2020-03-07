@@ -5,7 +5,7 @@
         author: "Scott Carver",
      copyright: "2016",
        license: "MIT",
-       version: "1.0.0",
+       version: "1.0.1",
         schelp: "FreeAfter overview",
           test: "",
            url: "https://github.com/scztt/FreeAfter.quark",

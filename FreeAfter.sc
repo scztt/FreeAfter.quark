@@ -24,6 +24,18 @@
 	}
 }
 
++Collection {
+	freeAfter {
+		|obj|
+		this.do(_.freeAfter(obj))
+	}
+
+	closeAfter {
+		|obj|
+		this.do(_.closeAfter(obj))
+	}
+}
+
 +View {
 	closeAfter {
 		|obj|
@@ -68,6 +80,14 @@
 		this.onFree(func)
 	}
 }
+
++NodeProxy {
+	addDoAfter {
+		|func|
+		this.group.onFree(func)
+	}
+}
+
 
 +Server {
 	addDoAfter {
